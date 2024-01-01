@@ -9,3 +9,4 @@ This tutorial consists of the following parts:
 3. [Return and handle an error](https://go.dev/doc/tutorial/handle-errors)
 4. [Return a random greeting](https://go.dev/doc/tutorial/random-greeting)
 5. [Return greetings for multiple people](https://go.dev/doc/tutorial/greetings-multiple-people)
+6. [Add a test](https://go.dev/doc/tutorial/add-a-test)

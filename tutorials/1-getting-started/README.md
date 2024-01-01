@@ -2,13 +2,7 @@
 
 https://go.dev/doc/tutorial/getting-started
 
-## How to run
+This tutorial consists of two parts:
 
-### 1. Writing `hello.go`
-
-1. Go into the [hello](./hello/) directory.
-2. Run the code:
-
-    ```bash
-    go run .
-    ```
+1. Writing [`hello.go`](./hello/hello.go).
+2. Importing and using the [`rsc.io/quote`](https://pkg.go.dev/rsc.io/quote/v4) package.

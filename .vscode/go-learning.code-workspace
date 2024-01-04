@@ -22,7 +22,7 @@
 			"path": "../tutorials/7-fuzz"
 		},
 		{
-			"path": "../tutorials/8-govulcheck"
+			"path": "../tutorials/8-govulncheck"
 		}
 	]
 }

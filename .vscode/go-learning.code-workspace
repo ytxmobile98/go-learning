@@ -17,6 +17,9 @@
 		},
 		{
 			"path": "../tutorials/6-generics"
+		},
+		{
+			"path": "../tutorials/7-fuzz"
 		}
 	]
 }

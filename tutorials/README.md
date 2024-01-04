@@ -12,3 +12,4 @@ https://go.dev/doc/tutorial
 4. **Accessing a relational database** ([tutorial page](https://go.dev/doc/tutorial/database-access)) ([code](./4-database-access/))
 5. **Developing a RESTful API with Go and Gin** ([tutorial page](https://go.dev/doc/tutorial/web-service-gin)) ([code](./5-web-service-gin/))
 6. **Getting started with generics** ([tutorial page](https://go.dev/doc/tutorial/generics)) ([code](./6-generics/))
+7. **Getting started with fuzzing** ([tutorial page](https://go.dev/doc/tutorial/fuzz)) ([code](./7-fuzz/))

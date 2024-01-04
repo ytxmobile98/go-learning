@@ -8,3 +8,7 @@ This tutorial has the following parts:
 2. Add a unit test
 3. Add a fuzz test
 4. Fix two bugs
+
+## Additional readings
+
+* [Go Fuzzing](https://go.dev/doc/security/fuzz)

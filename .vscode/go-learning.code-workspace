@@ -20,6 +20,9 @@
 		},
 		{
 			"path": "../tutorials/7-fuzz"
+		},
+		{
+			"path": "../tutorials/8-govulncheck"
 		}
 	]
 }

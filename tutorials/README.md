@@ -15,3 +15,4 @@ https://go.dev/doc/tutorial
 7. **Getting started with fuzzing** ([tutorial page](https://go.dev/doc/tutorial/fuzz)) ([code](./7-fuzz/))
 8. **Find and fix vulnerable dependencies with `govulncheck`** ([tutorial page](https://go.dev/doc/tutorial/govulncheck)) ([code](./8-govulncheck/))
 9. **Find and fix vulnerable dependencies with VS Code Go** ([tutorial page](https://go.dev/doc/tutorial/govulncheck-ide))
+10. **A tour of go** ([tutorial page](https://go.dev/tour)) ([code](./10-a-tour-of-go/))

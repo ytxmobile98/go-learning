@@ -1,28 +1,31 @@
 {
-	"folders": [
-		{
-			"path": "../tutorials/1-getting-started"
-		},
-		{
-			"path": "../tutorials/2-create-a-module"
-		},
-		{
-			"path": "../tutorials/3-workspaces"
-		},
-		{
-			"path": "../tutorials/4-database-access"
-		},
-		{
-			"path": "../tutorials/5-web-service-gin"
-		},
-		{
-			"path": "../tutorials/6-generics"
-		},
-		{
-			"path": "../tutorials/7-fuzz"
-		},
-		{
-			"path": "../tutorials/8-govulncheck"
-		}
-	]
+    "folders": [
+        {
+            "path": "../tutorials/1-getting-started"
+        },
+        {
+            "path": "../tutorials/2-create-a-module"
+        },
+        {
+            "path": "../tutorials/3-workspaces"
+        },
+        {
+            "path": "../tutorials/4-database-access"
+        },
+        {
+            "path": "../tutorials/5-web-service-gin"
+        },
+        {
+            "path": "../tutorials/6-generics"
+        },
+        {
+            "path": "../tutorials/7-fuzz"
+        },
+        {
+            "path": "../tutorials/8-govulncheck"
+        },
+        {
+            "path": "../tutorials/10-a-tour-of-go"
+        }
+    ]
 }

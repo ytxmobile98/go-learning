@@ -14,3 +14,7 @@
 3. [Readers](./methods-and-interfaces/3-readers/)
 4. [rot13Reader](./methods-and-interfaces/4-rot13reader/)
 5. [Images](./methods-and-interfaces/5-images/)
+
+## Concurrency
+
+1. [Equivalent Binary Trees](./concurrency/1-equivalent-binary-trees/)

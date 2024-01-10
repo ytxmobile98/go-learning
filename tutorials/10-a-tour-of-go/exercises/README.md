@@ -18,3 +18,4 @@
 ## Concurrency
 
 1. [Equivalent Binary Trees](./concurrency/1-equivalent-binary-trees/)
+2. [Web Crawler](./concurrency/2-web-crawler/)

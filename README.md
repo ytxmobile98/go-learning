@@ -1,6 +1,6 @@
-# Go learning
+# Learn Go
 
-This is a repository that keeps track of my progress of learning Go.
+Repository for learning Go through the [official website](https://go.dev).
 
 ## Resources
 

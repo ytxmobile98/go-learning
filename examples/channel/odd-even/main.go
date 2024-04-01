@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"sync/atomic"
 )
 
 type Result struct {
@@ -25,24 +26,24 @@ func CountOddEven(low, high int) (result Result) {
 	}
 
 	go func() {
-		concurrency := 0
+		concurrency := int64(0)
 
 		for i := low; i <= high; {
 			if concurrency >= maxConcurrency {
 				continue
+			} else {
+				atomic.AddInt64(&concurrency, 1)
+				go func(i int) {
+					if IsEven(i) {
+						channels.even <- i
+					} else {
+						channels.odd <- i
+					}
+
+					atomic.AddInt64(&concurrency, -1)
+				}(i)
+				i++
 			}
-
-			concurrency++
-			go func(i int) {
-				if IsEven(i) {
-					channels.even <- i
-				} else {
-					channels.odd <- i
-				}
-
-				concurrency--
-			}(i)
-			i++
 		}
 	}()
 
@@ -58,7 +59,7 @@ func CountOddEven(low, high int) (result Result) {
 }
 
 func main() {
-	result := CountOddEven(10, 100000)
+	result := CountOddEven(10, 1000)
 
 	fmt.Println("Odd:", result.Odd)
 	fmt.Println("Even:", result.Even)

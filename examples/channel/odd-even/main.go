@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type Result struct {
 	Odd  int
 	Even int
@@ -42,6 +44,6 @@ func CountOddEven(low, high int) (result Result) {
 func main() {
 	result := CountOddEven(10, 100)
 
-	println("Odd:", result.Odd)
-	println("Even:", result.Even)
+	fmt.Println("Odd:", result.Odd)
+	fmt.Println("Even:", result.Even)
 }

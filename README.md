@@ -1,7 +1,8 @@
 # Learn Go
 
-Repository for learning Go through the [official website](https://go.dev).
+Learning Go.
 
 ## Resources
 
-* [Official Go tutorial](https://go.dev/doc/tutorial) ([repo directory](./tutorials/))
+* [Go website](https://go.dev)
+    * [Official Go tutorial](https://go.dev/doc/tutorial) ([repo directory](./tutorials/))

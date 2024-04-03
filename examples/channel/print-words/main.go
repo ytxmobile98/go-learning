@@ -22,8 +22,8 @@ func main() {
 
 	print := func(wordIdx int) {
 		word := words[wordIdx]
-		send := (chan<- bool)(channels[wordIdx])
-		recv := (<-chan bool)(channels[(wordIdx+1)%len(words)])
+		send := (chan<- bool)(channels[(wordIdx+1)%len(words)])
+		recv := (<-chan bool)(channels[wordIdx])
 
 		for i := 0; i < maxCount; i++ {
 			<-recv

@@ -26,11 +26,12 @@ func main() {
 		for i := 0; i < maxCount; i++ {
 			<-recv
 			fmt.Println(word)
-			if i == maxCount-1 {
+
+			if i < maxCount-1 {
+				send <- true
+			} else {
 				close(send)
 				wg.Done()
-			} else {
-				send <- true
 			}
 		}
 	}

@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"sync"
 )
 
 func InitChannels[T any](count int) []chan T {
@@ -15,12 +14,11 @@ func InitChannels[T any](count int) []chan T {
 
 func main() {
 	maxCount := 100
-	words := []string{"cat", "fish", "dog"}
 
+	words := []string{"cat", "fish", "dog"}
 	channels := InitChannels[bool](len(words))
 
-	wg := sync.WaitGroup{}
-	wg.Add(len(words))
+	done := 0
 
 	print := func(word string, recv <-chan bool, send chan<- bool) {
 		for i := 0; i < maxCount; i++ {
@@ -31,7 +29,7 @@ func main() {
 				send <- true
 			} else {
 				close(send)
-				wg.Done()
+				done++
 			}
 		}
 	}
@@ -41,5 +39,7 @@ func main() {
 	}
 	channels[0] <- true // initialize the first print
 
-	wg.Wait()
+	for done < len(words) {
+		// wait for all prints to finish
+	}
 }

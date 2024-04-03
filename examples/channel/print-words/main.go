@@ -20,7 +20,11 @@ func main() {
 
 	done := 0
 
-	print := func(word string, recv <-chan bool, send chan<- bool) {
+	print := func(wordIdx int) {
+		word := words[wordIdx]
+		send := (chan<- bool)(channels[wordIdx])
+		recv := (<-chan bool)(channels[(wordIdx+1)%len(words)])
+
 		for i := 0; i < maxCount; i++ {
 			<-recv
 			fmt.Println(word)
@@ -34,8 +38,8 @@ func main() {
 		}
 	}
 
-	for i, word := range words {
-		go print(word, channels[i], channels[(i+1)%len(words)])
+	for i := range words {
+		go print(i)
 	}
 	channels[0] <- true // initialize the first print
 
